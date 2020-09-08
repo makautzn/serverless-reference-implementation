@@ -1,8 +1,8 @@
 variables:
-  ServiceConnectionName: '<serviceconnection>'
-  Location: '<location>'
-  ResourceGroup: '<resourcegroup>'
-  AppName: '<appName>' # less or equal than 11 chars
+  ServiceConnectionName: $(gitHubServiceConnectionName)
+  Location: westeurope
+  ResourceGroup: $(azureResourceGroup)
+  AppName: mksriclient
   DeployAzureResources: false
   DeployableSourceBranch: 'refs/heads/staging'
   SlotName: '<slotName>'
