@@ -1,11 +1,11 @@
 variables:
-  ServiceConnectionName: $(gitHubServiceConnectionName)
+  ServiceConnectionName: makautzn-arm
   Location: westeurope
   ResourceGroup: $(azureResourceGroup)
   AppName: mksriclient
   DeployAzureResources: false
   DeployableSourceBranch: 'refs/heads/staging'
-  SlotName: '<slotName>'
+  SlotName: staging
 
 name: $(Date:yyyyMMdd)$(Rev:.rr)
 
